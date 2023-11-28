@@ -170,7 +170,8 @@ void FWakaCommands::RegisterCommands()
 void FWakaTimeForUEModule::AssignGlobalVariables()
 {
 	// use _dupenv_s instead of getenv, as it is safer
-	GUserProfile = "c:";
+	const char* UserProfile = "c:";
+	GUserProfile = const_cast<char*>(UserProfile);
 	size_t LenDrive = NULL;
 	_dupenv_s(&GUserProfile, &LenDrive, "USERPROFILE");
 

@@ -13,7 +13,8 @@
 	"CanContainContent": false,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
-	"Installed": false,
+	"Installed": true,
+	"EnabledByDefault": true,
 	"Modules": [
 		{
 			"Name": "WakaTimeForUE",
